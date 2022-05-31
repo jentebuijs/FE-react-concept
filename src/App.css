@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed:wght@300&display=swap');
-/*---COLORS---*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed&display=swap');/*---COLORS---*/
 /*Rood #dd3038;*/
 /*Oranje #e7613a;*/
 /*Licht oranje #FDF4F2;*/
@@ -11,7 +10,6 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Roboto condensed', 'Helvetica', sans-serif;
-  color: #292929;
 }
 
 h1, h2, h3 {
