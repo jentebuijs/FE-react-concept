@@ -5,9 +5,9 @@ function Navbar() {
     return (
         <nav>
             <ul>
-                <li><NavLink to="/">1</NavLink></li>
-                <li><NavLink to="/">2</NavLink></li>
-                <li><NavLink to="/">3</NavLink></li>
+                <li><NavLink to="/" activeClassName="active-navlink">Hottest posts</NavLink></li>
+                <li><NavLink to="/" activeClassName="active-navlink">Reddit</NavLink></li>
+                <li><NavLink to="/" activeClassName="active-navlink">Memes</NavLink></li>
             </ul>
         </nav>
     );

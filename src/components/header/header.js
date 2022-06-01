@@ -3,19 +3,14 @@ import './header.css';
 import Navbar from "../navbar/navbar";
 import {NavLink} from "react-router-dom";
 
-function Header() {
+function Header({ image, title }) {
     return (
         <header className="outer-container">
             <div className="inner-container">
-                <nav>
-                    <ul>
-                        <li><NavLink to="/" activeClassName="active-navlink">Hottest posts</NavLink></li>
-                        <li><NavLink to="/" activeClassName="active-navlink">Reddit</NavLink></li>
-                        <li><NavLink to="/" activeClassName="active-navlink">Memes</NavLink></li>
-                    </ul>
-                </nav>
+                <Navbar />
                 <span className="header-content">
-
+                    {image && <img src={image} alt="prut"/>}
+                    {title && <h1>{title}</h1>}
                 </span>
             </div>
         </header>

@@ -1,6 +1,5 @@
 header {
-    color: white;
-    background-color: #dd3038;
+    background-color: var(--rood);
 }
 
 nav {
@@ -12,6 +11,7 @@ nav {
 
 ul {
     border: 2px solid yellow;
+    color: var(--wit);
     display: flex;
     justify-content: space-between;
     flex: 0 1 250px;
@@ -20,7 +20,7 @@ ul {
 }
 
 .active-navlink {
-    color: white;
+    color: var(--licht-oranje);
     text-decoration: none;
 }
 

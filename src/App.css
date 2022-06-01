@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed&display=swap');/*---COLORS---*/
-/*Rood #dd3038;*/
-/*Oranje #e7613a;*/
-/*Licht oranje #FDF4F2;*/
-/*Zwart #292929 (voor standaard tekst);*/
-/*Wit #FFFFFF;*/
+:root {
+  --rood: #dd3038;
+  --oranje: #e7613a;
+  --licht-oranje: #FDF4F2;
+  --zwart: #292929;
+  --wit: #FFFFFF;
+}
 
 * {
   padding: 0px;
@@ -20,11 +22,15 @@ h1, h2, h3 {
 .outer-container {
   border: 2px solid purple;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 100%
 }
 
 .inner-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   border: 2px solid green;
   width: 1200px;
   margin: 0px 30px;

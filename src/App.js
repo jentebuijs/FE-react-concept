@@ -1,19 +1,21 @@
 import './App.css';
+import React, { useState } from "react";
 import Home from "./pages/home/home";
 import Subreddit from "./pages/subreddit/subreddit";
-import { Route, Switch } from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 
 function App() {
-  return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/subreddit/:subredditId">
-        <Subreddit />
-      </Route>
-    </Switch>
-  );
+
+    return (
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/subreddit/:subredditId">
+                <Subreddit/>
+            </Route>
+        </Switch>
+    );
 }
 
 export default App;

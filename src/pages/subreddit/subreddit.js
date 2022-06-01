@@ -23,11 +23,12 @@ function Subreddit() {
 
     return (
         <>
-            <Header />
+            <Header
+                title={post.display_name_prefixed}
+            />
             <main className="outer-container">
                 {Object.keys(post).length > 0 &&
                     <div className="inner-container">
-                        <h1>{post.display_name_prefixed}</h1>
                         <h3>Title</h3>
                         <p>{post.title}</p>
                         <h3>Description</h3>

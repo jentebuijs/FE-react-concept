@@ -1,6 +1,6 @@
 footer {
     text-align: center;
-    color: white;
-    background-color: #292929;
+    color: var(--wit);
+    background-color: var(--zwart);
     padding: 10px;
 }

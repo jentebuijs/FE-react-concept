@@ -1,9 +1,10 @@
 
 main {
-    color: #292929;
+    color: var(--zwart);
 }
 
 a {
     text-decoration: none;
 }
+
 

@@ -1,9 +1,10 @@
 import './home.css';
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
+import Posts from "../../components/post/posts";
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -24,19 +25,16 @@ function Home() {
 
     return (
         <>
-            <Header/>
+            <Header
+                image=".../assets/logo.png"
+            />
             <main className="outer-container">
                 <div className="inner-container">
-                    {posts.length > 0 && posts.map((post) => {
-                        return (
-                            <article key={post.data.subreddit_id}>
-                                <h3><a href={`https://www.reddit.com/r/${post.data.subreddit}`}>{post.data.title}</a>
-                                </h3>
-                                <Link to={`/subreddit/${post.data.subreddit}`}>r/{post.data.subreddit}</Link>
-                                <p>Comments: {post.data.num_comments} - Ups: {post.data.ups}</p>
-                            </article>
-                        );
-                    })}
+                    <h1>Hottest posts</h1>
+                    <h4>on Reddit right now</h4>
+                    <div>
+                        {posts.length > 0 && <Posts posts={posts} />}
+                    </div>
                 </div>
             </main>
             <Footer/>
