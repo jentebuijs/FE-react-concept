@@ -1,10 +1,9 @@
-header {
-    background-color: #dd3038;
+
+main {
+    color: #292929;
 }
 
-footer {
-    text-align: center;
-    color: white;
-    background-color: #292929;
-    padding: 10px;
+a {
+    text-decoration: none;
 }
+

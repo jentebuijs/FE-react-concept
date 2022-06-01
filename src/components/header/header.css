@@ -1,0 +1,30 @@
+header {
+    color: white;
+    background-color: #dd3038;
+}
+
+nav {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+ul {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 250px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.active-navlink {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content {
+
+}
+
