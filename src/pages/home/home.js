@@ -1,10 +1,9 @@
 import './home.css';
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import {Link} from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
-import Posts from "../../components/post/posts";
+import Articles from "../../components/articles/articles";
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -26,15 +25,13 @@ function Home() {
     return (
         <>
             <Header
-                image=".../assets/logo.png"
+                image="./././assets/logo.png"
             />
             <main className="outer-container">
                 <div className="inner-container">
                     <h1>Hottest posts</h1>
                     <h4>on Reddit right now</h4>
-                    <div>
-                        {posts.length > 0 && <Posts posts={posts} />}
-                    </div>
+                    <Articles posts={posts} />
                 </div>
             </main>
             <Footer/>

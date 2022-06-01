@@ -1,0 +1,21 @@
+.article-container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    border: 2px solid pink;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*margin: 10px 0;*/
+}
+
+Link {
+    color: var(--rood);
+}

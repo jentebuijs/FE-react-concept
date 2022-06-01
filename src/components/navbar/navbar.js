@@ -1,13 +1,13 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 function Navbar() {
     return (
         <nav>
             <ul>
-                <li><NavLink to="/" activeClassName="active-navlink">Hottest posts</NavLink></li>
-                <li><NavLink to="/" activeClassName="active-navlink">Reddit</NavLink></li>
-                <li><NavLink to="/" activeClassName="active-navlink">Memes</NavLink></li>
+                <li><Link to="/">Hottest posts</Link></li>
+                <li><a href="https://www.reddit.com">Reddit</a></li>
+                <li><a href="https://www.reddit.com/r/memes/">Memes</a></li>
             </ul>
         </nav>
     );

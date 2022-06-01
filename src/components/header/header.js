@@ -1,7 +1,6 @@
 import React from "react";
 import './header.css';
 import Navbar from "../navbar/navbar";
-import {NavLink} from "react-router-dom";
 
 function Header({ image, title }) {
     return (
